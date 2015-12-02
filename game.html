@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Karta</title>
+	<link href="normalize.css" rel="stylesheet" type="text/css" />
+	<link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+
+
+<body>
+		<!-- HEADER AREA -->
+		<header>
+			<div class="wrapper row">
+				<div class="two_third">
+					<div class="display-image-behind"><h1>Karta</h1></div>
+				</div>
+				<div class="one_third">
+					<nav><ul><li><a href="index.html" alt="#">Quit</a></li></ul></nav>
+				</div>
+			</div>
+		</header>
+
+
+
+		<!-- SCORE AREA -->
+		<div class="wrapper inner">
+			<div class="row">
+				<div class="gameCol">
+					<h3 id="pTotalHP"></h3>
+				</div>
+				<div class="gameCen">
+					<h3 id="command"></h3>
+				</div>
+				<div class="gameCol">
+					<h3 id="eTotalHP"></h3>
+				</div>
+			</div>
+
+
+
+			<!-- ************OUR MAIN AREA OF GAME PLAY******** -->
+			<div class="row">
+				<div class="gameCol"><!-- PLAYER SIDE WITH DRAG AND DROP FUNCTIONS-->
+					<div class="p1"></div>
+					<div class="p2"></div>
+					<div class="p3"></div>
+				</div>
+
+
+				<div class="gameCen"> <!-- Center area for game stuff -->
+					<button type="button" id="pAttack">Attack</button>
+				</div>
+
+
+				<div class="gameCol"><!-- ENEMY SIDE NO DRAG AND DROP-->
+					<div class="e1"></div>
+					<div class="e2"></div>
+					<div class="e3"></div>
+				</div>
+	
+			</div> <!-- CLOSE ROW -->
+		</div><!-- CLOSE WRAPPER INNER -->
+
+
+
+
+		<!-- OUR SCRIPTS AND CDNs-->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+		<script src="js/game.js" type="text/javascript"></script>
+	</body>
+</html>
+
